@@ -3,7 +3,7 @@ class CreateGames < ActiveRecord::Migration[6.0]
     create_table :games do |t|
       t.string :name
       t.text :summary
-      t.date :realese_date
+      t.date :release_date
       t.integer :category
       t.float :rating
 
