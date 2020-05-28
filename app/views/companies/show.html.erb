@@ -1,0 +1,10 @@
+<h1><%= @company.name %></h1>
+
+<P><%= @company.description %></P>
+
+<ul>
+<li>Country: <%= @company.country%></li>
+<li>Start Date: <%= @company.start_date%></li>
+<li>Games: <%= @company.games.map { |game| game.name}.join(", ") %></li>
+ 
+</ul>
