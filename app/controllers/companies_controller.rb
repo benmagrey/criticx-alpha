@@ -23,6 +23,13 @@ class CompaniesController < ApplicationController
       render :edit
     end
   end
+
+  def destroy
+    company = Company.find(params[:id])
+    company.destroy
+    redirect_to companies_path
+  end
+
   private
   
   def company_params
